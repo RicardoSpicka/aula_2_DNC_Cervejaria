@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cervejaria</title>
+    <script>
+        function sim(){
+            window.location.href="sim.html"
+        }
+        function nao(){
+            window.location.href="nao.html"
+        }
+
+
+
+    </script>
+</head>
+<body>
+    <main>
+        <div>
+            <h1>Bem-vindo à<br>Cervejaria do Péricles Delivery</h1>
+        </div>
+
+        <form id="formulario">
+            <div>
+                <img id="cerveja" src="img/image 4.png">
+            </div>
+            <label>Você é maior de 18 anos ?</label>
+            <div id="botoes">
+                <input type="button" value="SIM" name="resposta" onclick="sim()">
+                <input type="button" value="NÃO" name="resposta" onclick="nao()">
+            </div>
+        </form>
+
+    </main>     
+</body>
+</html>
