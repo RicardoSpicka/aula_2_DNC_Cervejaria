@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    <header>
+        <nav id="menu">
+            <a href="">A Cervejaria</a>
+            <a href="">Nossas Cervejas</a>
+            <a href="">Delivery</a>
+            <a href="">Meu Carrinho    <img src="img/cart-shopping-solid.png"></a> 
+        </nav>
+    </header>
+    <main>
+        <div id="texto">
+            <div>
+                <img id="cerveja" src="img/image 4.png">
+            </div>
+            <p>Olá! Gostaria de te dar boas vindas à Cervejaria do Pericles.<br>Escolha a bebida que mais te agrada:</p>
+        </div>
+
+    </main> 
+    <div class="produto">
+        <div>
+            <img src="img/image 9.png">
+        </div>
+        <div>
+            <p>Refrigerante Guaraná</p>
+            <p>R$ 10,00</p>
+        </div>
+        <form action="comprar.html" method="GET">
+             <input type="text" name="preço" class="preco" value="R$ 10,00" hidden>
+            <button class="botao" type="submit" class="preco">Comprar</button>
+        </form>
+    </div>  
+     
+</body>
+<script>
+    const input = document.querySelector('.preco');
+    const handleSubmit = (event) =>{
+        event.preventDefault();
+        window.location = 'comprar.html';
+    }    
+</script>
+</html>

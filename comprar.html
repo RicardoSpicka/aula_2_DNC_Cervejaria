@@ -8,7 +8,6 @@
     <title>Cervejaria</title>
 </head>
 <body>
-
     <header>
         <nav id="menu">
             <a href="">A Cervejaria</a>
@@ -18,14 +17,28 @@
         </nav>
     </header>
     <main>
-        <form id="formulario3">
+        <div id="texto">
             <div>
                 <img id="cerveja" src="img/image 4.png">
             </div>
-            <label>Sinto muito, mas este site só é permitido para maiores de 18 anos! :(</label>
-        </form>
+            <p>Olá!<br>O total a ser pago é: <br><spam id="valor"></spam></p>
+        </div>
+        <div>
+            <button class="botao" onclick="voltar()">Home</button>
+        </div>
 
-    </main> 
-    
+
+    </main>    
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const preço = urlParams.get("preço") 
+
+        let conteudoParagrafoHTML = document.getElementById("valor").innerHTML;
+        document.getElementById("valor").innerHTML = preço;
+
+        function voltar(){
+            window.location.href="index.html"
+        }
+    </script>
 </body>
 </html>
